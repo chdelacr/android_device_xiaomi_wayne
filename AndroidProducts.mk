@@ -14,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit device config for ShapeShiftOS
+# inherit device config for Octavi OS
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_wayne.mk
+    $(LOCAL_DIR)/octavi_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_wayne-eng \
-    ssos_wayne-userdebug \
-	ssos_wayne-user
+    octavi_wayne-eng \
+    octavi_wayne-userdebug \
+	octavi_wayne-user

@@ -19,8 +19,10 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit ShapeShiftOS product configuration
-$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
+# Inherit Octavi OS product configuration
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+OCTAVI_BUILD_TYPE := Official
+OCTAVI_DEVICE_MAINTAINER := chdelacr
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -41,19 +43,6 @@ TARGET_SCREEN_DENSITY := 400
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := ssos_wayne
+PRODUCT_NAME := octavi_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
-
-# Inherit ShapeShiftOS Official build stuff.
-SSOS_BUILD_TYPE := OFFICIAL
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BOOT_ANIMATION_RES := 1080
-
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.ssos.cpu=SDM660
-
-# Gapps
-USE_GAPPS := true
-IS_PHONE := true
-TARGET_GAPPS_ARCH := arm64
