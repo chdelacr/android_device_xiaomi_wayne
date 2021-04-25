@@ -14,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit device config for ShapeShiftOS
+# inherit device config for Pixel Extended
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_wayne.mk
+    $(LOCAL_DIR)/aosp_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_wayne-eng \
-    ssos_wayne-userdebug \
-	ssos_wayne-user
+    aosp_wayne-eng \
+    aosp_wayne-userdebug \
+	aosp_wayne-user
